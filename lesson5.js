@@ -21,9 +21,8 @@ function decToHex(n) {
 			alert ('Введенное число не находится в диапазоне от 0 до 255');
 			break;
 		}			
-		n[key] = +n[key];																			// Преобразуем из строки в число	
-		n[key] = n[key].toString(16);													// Переводим из Dec в Hex
-		//n[key] = '0x' + n[key];					
+			
+		n[key] = (+n[key]).toString(16);													//  Преобразуем к числу и переводим из Dec в Hex 		
 	}
 	return n;																								// Возвращаем значение 
 }
